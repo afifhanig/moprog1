@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.store.MenuEsKrim">
+
+<CheckBox
+    android:id="@+id/greentea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/jml_greentea"
+    android:layout_alignBottom="@+id/jml_greentea"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:text="Greentea (Rp. 5000)"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="37dp" />
+
+    <CheckBox
+    android:id="@+id/mocca"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/greentea"
+    android:text="Mocca (Rp. 3000)"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="101dp" />
+
+<CheckBox
+    android:id="@+id/vanilla"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/mocca"
+    android:text="Vanilla (Rp. 4000)"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="69dp" />
+
+    <Button
+        android:id="@+id/btn_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jml_vanilla"
+        android:layout_marginStart="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="206dp"
+        android:layout_toEndOf="@+id/greentea"
+        android:layout_toRightOf="@+id/greentea"
+        android:text="pesan"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+<EditText
+    android:id="@+id/jml_greentea"
+    android:layout_width="58dp"
+    android:layout_height="38dp"
+    android:layout_alignLeft="@+id/jml_mocca"
+    android:layout_alignParentTop="true"
+    android:layout_alignStart="@+id/jml_mocca"
+    android:layout_marginTop="122dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    tools:layout_editor_absoluteX="246dp"
+    tools:layout_editor_absoluteY="37dp" />
+
+<EditText
+    android:id="@+id/jml_vanilla"
+    android:layout_width="58dp"
+    android:layout_height="38dp"
+    android:layout_alignLeft="@+id/jml_mocca"
+    android:layout_alignStart="@+id/jml_mocca"
+    android:layout_below="@+id/jml_mocca"
+    android:ems="10"
+    android:inputType="textPersonName"
+    tools:layout_editor_absoluteX="246dp"
+    tools:layout_editor_absoluteY="69dp" />
+
+<EditText
+    android:id="@+id/jml_mocca"
+    android:layout_width="58dp"
+    android:layout_height="38dp"
+    android:layout_alignBottom="@+id/mocca"
+    android:layout_marginLeft="64dp"
+    android:layout_marginStart="64dp"
+    android:layout_toEndOf="@+id/greentea"
+    android:layout_toRightOf="@+id/greentea"
+    android:ems="10"
+    android:inputType="textPersonName"
+    tools:layout_editor_absoluteX="246dp"
+    tools:layout_editor_absoluteY="101dp" />
+
+    <TextView
+        android:id="@+id/menues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jml_greentea"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="-122dp"
+        android:text="Menu Eskrim" />
+
+    <TextView
+        android:id="@+id/MenuRoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Menu Roti" />
+
+    <CheckBox
+        android:id="@+id/rotigoreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MenuRoti"
+        android:layout_alignParentStart="true"
+        android:text="Roti Goreng (10000)" />
+
+    <CheckBox
+        android:id="@+id/rotibakar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rotigoreng"
+        android:layout_alignParentStart="true"
+        android:text="Roti Bakar (20000)" />
+
+    <EditText
+        android:id="@+id/jml_rotigoreng"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MenuRoti"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-17dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/jml_rotibakar"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>
